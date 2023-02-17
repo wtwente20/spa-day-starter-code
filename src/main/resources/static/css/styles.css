@@ -1,5 +1,9 @@
 body {
-    background-color: pink;
+    border: 5px solid pink;
+    border-radius: 15px;
+    font-family: Helvetica;
+    color: white;
+    background-color: black;
 }
 
 div {
@@ -7,7 +11,7 @@ div {
     width: 50%;
     padding: 10px;
     text-align: center;
-    background-color: white;
+
 }
 
 h1 {
@@ -15,7 +19,7 @@ h1 {
         width: 50%;
         padding: 10px;
         text-align: center;
-        background-color: white;
+        color: white;
 }
 
 table {
@@ -24,3 +28,4 @@ table {
             padding: 10px;
             text-align: center;
 }
+
