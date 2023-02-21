@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Within the add.html template, create a form that accepts inputs for each of the User class properties.
+ Include an additional password input field to verify the password input. The form should be set up to
+ POST to /user.-->
+
+<form method="post">
+    <label>
+        Username:
+        <input type="text" name="username" th:value="${username}">
+    </label>
+    <br>
+
+    <label>
+        Email:
+        <input type="email" name="email" th:value="${email}">
+    </label>
+    <br>
+
+    <label>
+        Password:
+        <input type="password" name="password" th>
+    </label>
+    <br>
+
+    <label>
+        Verify Password:
+        <input type="password" name="verify" >
+    </label>
+    <br>
+
+    <p th:text="${error}"></p>
+
+    <input type="submit" value="Sign Up">
+
+</form>
+
+</body>
+</html>
